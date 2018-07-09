@@ -1,0 +1,14 @@
+
+@media screen and (min-width: 1000px){
+  .wrapper {
+    display: grid;
+    @include grid(1fr 1fr 1fr);
+    grid-template-areas: "kop kop kop"
+    "t1 t2 afb"
+    "t3 t4 afb"
+    "t3 t5 afb"
+    "t6 t7 t8"
+    "t9 t9 aside"
+    "voet voet voet";
+  }
+}

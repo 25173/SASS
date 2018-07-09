@@ -1,0 +1,78 @@
+// variabelen importeren
+@import "vars";
+
+@import "mixins";
+
+@import "rest";
+
+@import "tableSize";
+
+@import "pcSize";
+
+body{
+  background: $hoofdkleur;
+  font-family: sans-serif;
+}
+
+footer{
+  background: $lichter;
+}
+
+
+.number {
+  background-color: $darker;
+  color: #fff;
+  font-size: 3em;
+  width: 1.2em;
+  text-align: right;
+  padding:.2em;
+}
+
+
+header{
+  background-color: rgba(188,255,220,0.5);
+  padding: 2em;
+  p{
+    color: $lichter;
+    padding: $padding/2 $padding;
+    &:hover{
+      background: pink;
+    }
+  }
+}
+
+h1, .tagline{color: #47a}
+
+h1,h3{font-family: Montserrat;}
+
+section{
+  display: grid;
+  @include grid(auto 1fr);
+  padding-bottom: .2em;
+  img{
+    max-width: 100%;
+  }
+}
+
+aside{
+  background-color: rgba(188,255,220,0.5);
+  ul{
+    list-style: none;
+    padding: $zero;
+    margin: $zero;
+  }
+  h3{
+    padding: 2em;
+    color: #fff;
+    background-color: blueviolet;
+  }
+  a{
+    text-decoration: none;
+    padding: 2em;
+    display: block;
+    &:hover{
+      background-color: $lichter;
+      color: #fff;
+    }
+  }
+}

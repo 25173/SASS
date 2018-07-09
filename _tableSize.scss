@@ -1,0 +1,52 @@
+@media screen and (min-width: 760px){
+  .afb{
+    display: block;
+    background-image: url("http://static.2018.lowlands.fabriquehq.nl/static/images/stills/Lowlands_HomepageAnimatie_poster.png");
+    background-size: cover;
+    background-position: center center;
+  }
+  .wrapper {
+    display: grid;
+    @include grid(1fr 1fr);
+    grid-template-areas: "kop kop"
+    "t1 t2"
+    "t3 t4"
+    "t3 t5"
+    "afb t6"
+    "afb t7"
+    "t8 aside"
+    "t9 aside"
+    "voet voet";
+  }
+  header{grid-area: kop;}
+  .negeren{ grid-area: t1;}
+  .drank{ grid-area: t2;}
+  .eten{grid-area: t3}
+  .verkleden{grid-area: t4;}
+  .douchen{grid-area: t5;}
+  .muntjes{grid-area: t6;}
+  .lief{grid-area: t7;}
+  .maatregelen {grid-area: t8;}
+  .artiest{ grid-area: t9;}
+  .afb { grid-area: afb;}
+  aside{grid-area: aside;}
+  footer{ grid-area: voet;}
+
+  h1{
+    font-size: 2.5em;
+  }
+
+
+  .nergeren_artice{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    h3{
+      grid-column: span 2
+    }
+  }
+
+  footer{
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
